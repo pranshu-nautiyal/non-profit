@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GiveAMemory | Volunteer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Inter:wght@400;500;600&family=Yellowtail&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="nav.css">
+<link rel="stylesheet" href="about.css">
+<link rel="stylesheet" href="volunteer.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+</head>
+<body class="has-dark-hero">
+
+<header class="site-header" id="site-header">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<a href="index.html" class="brand">Give<span class="brand-accent">A</span>Memory</a>
+		</div>
+
+		<div class="navbar-right-group">
+			<div class="nav-menu">
+				<div class="nav-item">
+					<button class="nav-trigger" aria-expanded="false">
+						About
+						<svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+					</button>
+					<div class="dropdown-panel">
+						<ul class="dropdown-list">
+							<li>
+								<a href="about.html" class="nav-list-item">About Us</a>
+							</li>
+							<li>
+								<a href="story.html" class="nav-list-item">Our Story</a>
+							</li>
+							<li>
+								<a href="team.html" class="nav-list-item">Our Team</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="nav-item">
+					<button class="nav-trigger" aria-expanded="false">
+						Get Involved
+						<svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+					</button>
+					<div class="dropdown-panel">
+						<ul class="dropdown-list">
+							<li>
+								<a href="volunteer.html" class="nav-list-item">Volunteer</a>
+							</li>
+							<li>
+								<a href="#" class="nav-list-item">Chapters</a>
+							</li>
+							<li>
+								<a href="#" class="nav-list-item">Partner</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<a href="#" class="nav-link">Programs</a>
+			</div>
+
+			<div class="navbar-actions">
+				<button class="btn btn-solid">Donate</button>
+			</div>
+		</div>
+
+		<button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
+			<svg class="toggle-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+				<path class="top-bar" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22" />
+				<path d="M7 16 27 16" />
+			</svg>
+		</button>
+	</nav>
+</header>
+
+<section class="volunteer-hero">
+	<div class="collage-grid">
+		<div class="collage-tile ct-1"><i data-lucide="image"></i></div>
+		<div class="collage-tile ct-2"><i data-lucide="image"></i></div>
+		<div class="collage-tile ct-3"><i data-lucide="image"></i></div>
+		<div class="collage-tile ct-4"><i data-lucide="image"></i></div>
+		<div class="collage-tile ct-5"><i data-lucide="image"></i></div>
+	</div>
+	<div class="volunteer-hero-overlay"></div>
+	<div class="volunteer-hero-content">
+		<h1>A movement powered<br>by young artists.</h1>
+		<p>Every card, drawing, and kind note we deliver starts with someone who decided to help.</p>
+	</div>
+</section>
+
+<main class="volunteer-main">
+
+	<div class="volunteer-intro">
+		<span class="eyebrow reveal-up">Volunteer to Create</span>
+		<h2 class="about-heading reveal-up stagger-1">A simple, meaningful way to bring color into someone&rsquo;s day.</h2>
+		<div class="about-body">
+			<p class="reveal-up stagger-2">Whether you&rsquo;re a student, a classroom, a scout troop, or a family looking for a weekend project, creating art for our patients is one of the easiest ways to get involved. No sign-up forms, no ongoing commitment &mdash; just a little time, a few art supplies, and a willingness to make someone smile.</p>
+		</div>
+	</div>
+
+	<div class="volunteer-tracks">
+		<div class="track-card reveal-up">
+			<div class="img-placeholder track-media">
+				<i data-lucide="image"></i>
+				<span>Image placeholder</span>
+			</div>
+			<span class="eyebrow">Create</span>
+			<h3 class="step-title">Make Art From Anywhere</h3>
+			<p class="step-desc">Perfect for classrooms, scout troops, or families. Create a drawing or card on your own time, then send it our way.</p>
+			<a href="#steps" class="btn btn-outline">Register</a>
+		</div>
+
+		<div class="track-card reveal-up stagger-1">
+			<div class="img-placeholder track-media">
+				<i data-lucide="image"></i>
+				<span>Image placeholder</span>
+			</div>
+			<span class="eyebrow">Connect</span>
+			<h3 class="step-title">Get Involved Locally</h3>
+			<p class="step-desc">Join a chapter, help at a community event, or partner with us to bring art supplies to a care facility near you.</p>
+			<a href="#chapter-finder" class="btn btn-outline">Find a Chapter</a>
+		</div>
+	</div>
+
+	<div id="steps" class="volunteer-steps">
+		<div class="step-card reveal-up">
+			<div class="step-number">1</div>
+			<h3 class="step-title">Gather Your Supplies</h3>
+			<p class="step-desc">Grab crayons, markers, colored pencils, or paint. Keep it simple &mdash; bold colors and big, clear shapes are easiest for our patients to enjoy.</p>
+		</div>
+
+		<div class="step-card reveal-up stagger-1">
+			<div class="step-number">2</div>
+			<h3 class="step-title">Create Something Cheerful</h3>
+			<p class="step-desc">Draw a picture, make a card, or write a short, warm note. Nature, animals, flowers, and kind words are always a hit.</p>
+		</div>
+
+		<div class="step-card reveal-up stagger-2">
+			<div class="step-number">3</div>
+			<h3 class="step-title">Send It Our Way</h3>
+			<p class="step-desc">Mail or drop off your artwork and we&rsquo;ll make sure it reaches someone who needs it. Reach out to <a href="mailto:hello@giveamemory.org" class="step-contact">hello@giveamemory.org</a> for mailing and drop-off details.</p>
+		</div>
+	</div>
+
+	<div class="volunteer-example">
+		<div class="volunteer-example-media">
+			<div class="img-placeholder">
+				<i data-lucide="image"></i>
+				<span>Image placeholder</span>
+			</div>
+		</div>
+		<div class="volunteer-example-text">
+			<span class="eyebrow">What Patients Receive</span>
+			<h3 class="step-title" style="font-size: 22px; margin-bottom: 12px;">Every piece is different, and that&rsquo;s the point.</h3>
+			<p class="step-desc">There&rsquo;s no template to follow. A crayon drawing, a painted card, a handwritten note &mdash; what matters is that a real person made it, for someone they may never meet.</p>
+		</div>
+	</div>
+
+	<div id="chapter-finder" class="chapter-finder">
+		<div class="chapter-finder-text">
+			<span class="eyebrow">Get Involved Locally</span>
+			<h3 class="step-title" style="font-size: 22px;">Find a Chapter Near You</h3>
+			<p class="step-desc">Search by city or zip code to find the closest GiveAMemory chapter and get connected with local volunteer opportunities.</p>
+
+			<form class="chapter-search" id="chapter-search-form">
+				<div class="chapter-search-fields">
+					<input type="text" class="chapter-search-input" id="search-city" placeholder="City">
+					<input type="text" class="chapter-search-input" id="search-state" placeholder="State">
+					<input type="text" class="chapter-search-input" id="search-zip" placeholder="Zip Code">
+				</div>
+				<div class="chapter-search-actions">
+					<button type="submit" class="btn btn-solid" id="chapter-search-btn">Search</button>
+					<button type="button" class="btn btn-outline" id="use-location-btn">
+						<i data-lucide="locate-fixed"></i>
+						Use My Location
+					</button>
+				</div>
+			</form>
+
+			<div class="chapter-results" id="chapter-results">
+				<p class="chapter-results-empty">Enter a city, state, or zip code above (or use your location) and we&rsquo;ll show the closest chapters.</p>
+			</div>
+		</div>
+
+		<div class="chapter-map" id="chapter-map"></div>
+	</div>
+
+	<div class="volunteer-features">
+		<div class="feature-item">
+			<div class="feature-icon"><i data-lucide="calendar-check"></i></div>
+			<h4>No Commitment Required</h4>
+			<p>Create once, or make it an ongoing family tradition. There&rsquo;s nothing to sign up for.</p>
+		</div>
+		<div class="feature-item">
+			<div class="feature-icon"><i data-lucide="heart-handshake"></i></div>
+			<h4>Every Age Welcome</h4>
+			<p>From kindergarten classrooms to retirees, anyone can create something meaningful.</p>
+		</div>
+		<div class="feature-item">
+			<div class="feature-icon"><i data-lucide="mail"></i></div>
+			<h4>Questions? Reach Out</h4>
+			<p>Email <a href="mailto:hello@giveamemory.org">hello@giveamemory.org</a> and we&rsquo;ll help you get started.</p>
+		</div>
+	</div>
+
+	<div class="volunteer-cta">
+		<h3>Ready to make someone&rsquo;s day?</h3>
+		<p>Every drawing, card, and kind word helps us bring comfort to patients who need it most.</p>
+		<button class="btn btn-solid">Donate</button>
+	</div>
+
+</main>
+
+<div class="mobile-menu" id="mobile-menu">
+	<div class="mobile-menu-inner">
+		<div class="mobile-links">
+			<span class="mobile-section-label">About</span>
+			<a href="about.html" class="nav-list-item">About Us</a>
+			<a href="story.html" class="nav-list-item">Our Story</a>
+			<a href="team.html" class="nav-list-item">Our Team</a>
+
+			<span class="mobile-section-label">Get Involved</span>
+			<a href="volunteer.html" class="nav-list-item">Volunteer</a>
+			<a href="#" class="nav-list-item">Chapters</a>
+			<a href="#" class="nav-list-item">Partner</a>
+
+			<a href="#" class="nav-link" style="margin-top: 8px;">Programs</a>
+		</div>
+		<div class="mobile-actions">
+			<button class="btn btn-solid w-full">Donate</button>
+		</div>
+	</div>
+</div>
+
+<script src="https://unpkg.com/lucide@latest"></script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="nav.js"></script>
+<script src="about.js"></script>
+<script src="volunteer.js"></script>
+</body>
+</html>
