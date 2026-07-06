@@ -6,11 +6,13 @@
 <title>GiveAMemory</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Yellowtail&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&family=Yellowtail&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="nav.css">
+<link rel="stylesheet" href="about.css">
+<link rel="stylesheet" href="index.css">
 </head>
-<body>
+<body class="has-dark-hero">
 
 <header class="site-header" id="site-header">
 	<nav class="navbar">
@@ -60,7 +62,7 @@
 					</div>
 				</div>
 
-				<a href="#" class="nav-link">Programs</a>
+				<a href="#" class="nav-link">Contact</a>
 			</div>
 
 			<div class="navbar-actions">
@@ -77,58 +79,117 @@
 	</nav>
 </header>
 
-<main class="placeholder-main">
-	<div class="skeleton-block skeleton-title"></div>
-	<div class="skeleton-block skeleton-subtitle"></div>
-
-	<div class="skeleton-group">
-		<div class="skeleton-block"></div>
-		<div class="skeleton-block"></div>
-		<div class="skeleton-block"></div>
-		<div class="skeleton-block"></div>
+<section class="about-hero home-hero">
+	<div class="about-hero-media">
+		<i data-lucide="image"></i>
+		<span>Image placeholder</span>
 	</div>
-
-	<div class="skeleton-group">
-		<div class="skeleton-block"></div>
-		<div class="skeleton-block"></div>
-		<div class="skeleton-block"></div>
-		<div class="skeleton-block"></div>
+	<div class="home-hero-content">
+		<h1 class="about-hero-heading reveal-up">A small drawing.<br>A big moment of connection.</h1>
+		<p class="home-hero-sub reveal-up stagger-1">GiveAMemory connects young artists with elderly patients living with dementia and Alzheimer&rsquo;s, one handmade piece of art at a time.</p>
+		<div class="home-hero-buttons reveal-up stagger-2">
+			<a href="about.html" class="btn btn-outline">Learn More</a>
+			<button class="btn btn-solid">Donate</button>
+		</div>
 	</div>
+</section>
 
-	<div class="skeleton-group">
-		<div class="skeleton-block"></div>
-		<div class="skeleton-block"></div>
-		<div class="skeleton-block"></div>
-		<div class="skeleton-block"></div>
-	</div>
+<main class="home-main">
 
-	<div class="skeleton-group">
-		<div class="skeleton-block"></div>
-		<div class="skeleton-block"></div>
-		<div class="skeleton-block"></div>
-		<div class="skeleton-block"></div>
-	</div>
+	<section class="home-section">
+		<div class="home-intro">
+			<span class="eyebrow reveal-up">Who We Are, What We Do</span>
+			<h2 class="about-heading reveal-up stagger-1">A youth-powered nonprofit bringing color, comfort, and connection to elderly patients.</h2>
+			<p class="reveal-up stagger-2">Our mission is to provide comfort and engagement to elderly dementia and Alzheimer&rsquo;s patients with limited motor control and speech through distributing specialized art materials, youth-created artwork, and community outreach that support emotional well-being and social connection.</p>
+		</div>
+	</section>
 
-	<div class="skeleton-group">
-		<div class="skeleton-block"></div>
-		<div class="skeleton-block"></div>
-		<div class="skeleton-block"></div>
-		<div class="skeleton-block"></div>
-	</div>
+	<section class="home-section home-section-tight">
+		<div class="home-cards">
+			<a href="volunteer.html" class="home-card reveal-up">
+				<div class="home-card-media">
+					<img src="art_volunteer.png" alt="Watercolor palette and art supplies laid out on a table">
+				</div>
+				<h3>Create Art</h3>
+				<p>Make a drawing or card for a patient in need &mdash; no experience or commitment required.</p>
+				<span class="home-card-arrow"><i data-lucide="arrow-right"></i></span>
+			</a>
 
-	<div class="skeleton-group">
-		<div class="skeleton-block"></div>
-		<div class="skeleton-block"></div>
-		<div class="skeleton-block"></div>
-		<div class="skeleton-block"></div>
-	</div>
+			<a href="volunteer.html#chapter-finder" class="home-card reveal-up stagger-1">
+				<div class="home-card-media">
+					<img src="dementia_supplies.png" alt="Specialized art supplies for dementia and Alzheimer's patients">
+				</div>
+				<h3>Volunteer Locally</h3>
+				<p>Join a chapter or help at a community event bringing art supplies to a care facility near you.</p>
+				<span class="home-card-arrow"><i data-lucide="arrow-right"></i></span>
+			</a>
 
-	<div class="skeleton-group">
-		<div class="skeleton-block"></div>
-		<div class="skeleton-block"></div>
-		<div class="skeleton-block"></div>
-		<div class="skeleton-block"></div>
-	</div>
+			<a href="#" class="home-card reveal-up stagger-2">
+				<div class="home-card-media">
+					<img src="donation.png" alt="Donating to support art supplies and outreach">
+				</div>
+				<h3>Donate</h3>
+				<p>Help us provide art materials, mailing costs, and community outreach where it&rsquo;s needed most.</p>
+				<span class="home-card-arrow"><i data-lucide="arrow-right"></i></span>
+			</a>
+		</div>
+	</section>
+
+	<section class="home-section">
+		<div class="home-tagline">
+			<p class="reveal-up">Comfort doesn&rsquo;t require conversation. It just requires <span class="accent">someone who cares enough to create it</span>.</p>
+		</div>
+	</section>
+
+	<section class="home-section home-section-tight">
+		<div class="home-explore">
+			<a href="about.html" class="home-explore-card reveal-up">
+				<div class="home-explore-text">
+					<h4>Our Mission</h4>
+					<p>Why we do this work</p>
+				</div>
+				<span class="home-card-arrow"><i data-lucide="arrow-right"></i></span>
+			</a>
+
+			<a href="story.html" class="home-explore-card reveal-up stagger-1">
+				<div class="home-explore-text">
+					<h4>Our Story</h4>
+					<p>It started with a grandmother</p>
+				</div>
+				<span class="home-card-arrow"><i data-lucide="arrow-right"></i></span>
+			</a>
+
+			<a href="team.html" class="home-explore-card reveal-up stagger-2">
+				<div class="home-explore-text">
+					<h4>Our Team</h4>
+					<p>Meet the founders</p>
+				</div>
+				<span class="home-card-arrow"><i data-lucide="arrow-right"></i></span>
+			</a>
+		</div>
+	</section>
+
+	<section class="home-section home-section-tight">
+		<div class="volunteer-intro" style="margin-bottom: 32px;">
+			<span class="eyebrow reveal-up">See It In Action</span>
+			<h2 class="about-heading reveal-up stagger-1">What a handmade piece of art can do.</h2>
+		</div>
+		<div class="home-video reveal-up stagger-2">
+			<div class="home-video-inner">
+				<div class="home-video-play"><i data-lucide="play"></i></div>
+				<span>Video coming soon</span>
+			</div>
+		</div>
+	</section>
+
+	<section class="home-section">
+		<div class="home-cta">
+			<h3>Ready to make someone&rsquo;s day?</h3>
+			<p>Every drawing, card, and kind word helps us bring comfort to patients who need it most.</p>
+			<button class="btn btn-solid">Donate</button>
+		</div>
+	</section>
+
 </main>
 
 <div class="mobile-menu" id="mobile-menu">
@@ -144,7 +205,7 @@
 			<a href="#" class="nav-list-item">Chapters</a>
 			<a href="#" class="nav-list-item">Partner</a>
 
-			<a href="#" class="nav-link" style="margin-top: 8px;">Programs</a>
+			<a href="#" class="nav-link" style="margin-top: 8px;">Contact</a>
 		</div>
 		<div class="mobile-actions">
 			<button class="btn btn-solid w-full">Donate</button>
@@ -154,5 +215,6 @@
 
 <script src="https://unpkg.com/lucide@latest"></script>
 <script src="nav.js"></script>
+<script src="about.js"></script>
 </body>
 </html>
