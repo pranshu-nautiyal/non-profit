@@ -24,7 +24,8 @@
 		{
 			name: 'Aveek Sarkar',
 			title: 'CGO &amp; Co-Founder',
-			desc: 'Aveek leads growth and outreach, building relationships with care facilities, schools, and young artists to bring the organization&rsquo;s programs to more communities.'
+			desc: 'Aveek leads growth and outreach, building relationships with care facilities, schools, and young artists to bring the organization&rsquo;s programs to more communities.',
+			image: 'aveek.png'
 		}
 	];
 
