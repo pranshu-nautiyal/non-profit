@@ -69,8 +69,20 @@
 }
 
 .story-hero-media {
-  flex: 1 1 280px;
+  flex: 0 1 340px;
+  max-width: 340px;
   min-width: 240px;
+  align-self: flex-end;
+  margin-bottom: -180px;
+}
+
+.story-hero-photo {
+  display: block;
+  width: 100%;
+  height: 520px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 16px;
 }
 
 .img-placeholder--dark {

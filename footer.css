@@ -1,0 +1,135 @@
+/* ---------- Site footer ---------- */
+
+.site-footer {
+  position: relative;
+  z-index: 10;
+  background: var(--charcoal);
+  color: rgba(247, 238, 226, 0.85);
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, Roboto, sans-serif;
+}
+
+.footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 64px 24px 40px;
+  display: grid;
+  grid-template-columns: 1.6fr repeat(4, 1fr);
+  gap: 32px;
+}
+
+.footer-brand {
+  max-width: 260px;
+}
+
+.footer-logo {
+  display: block;
+  height: 40px;
+  width: auto;
+  margin-bottom: 10px;
+}
+
+.footer-brand-name {
+  display: block;
+  margin-bottom: 14px;
+  font-family: "Yellowtail", cursive;
+  font-size: 1.75rem;
+  font-weight: 400;
+  line-height: 1;
+  color: #f7eee2;
+}
+
+.footer-brand-name .brand-accent {
+  color: var(--cta-yellow);
+}
+
+.footer-brand p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.6;
+  color: rgba(247, 238, 226, 0.65);
+}
+
+.footer-col h4 {
+  margin: 0 0 16px;
+  font-family: "Fredoka", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, Roboto, sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #f7eee2;
+}
+
+.footer-col a {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 14px;
+  color: rgba(247, 238, 226, 0.7);
+  text-decoration: none;
+  transition: color 150ms ease;
+}
+
+.footer-col a:hover {
+  color: var(--cta-yellow);
+}
+
+.footer-socials {
+  display: flex;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.footer-col a.footer-social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(247, 238, 226, 0.1);
+  color: #f7eee2;
+  margin-bottom: 0;
+  transition: background-color 150ms ease, color 150ms ease;
+}
+
+.footer-social-btn:hover {
+  background: var(--cta-yellow);
+  color: var(--nav-ink);
+}
+
+.footer-social-btn svg {
+  width: 16px;
+  height: 16px;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(247, 238, 226, 0.12);
+  padding: 24px;
+}
+
+.footer-bottom p {
+  max-width: 1152px;
+  margin: 0 auto 8px;
+  font-size: 13px;
+  line-height: 1.6;
+  color: rgba(247, 238, 226, 0.55);
+}
+
+.footer-bottom p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 900px) {
+  .footer-inner {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+    max-width: 100%;
+    margin-bottom: 8px;
+  }
+}
+
+@media (max-width: 560px) {
+  .footer-inner {
+    grid-template-columns: 1fr;
+  }
+}

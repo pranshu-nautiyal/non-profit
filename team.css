@@ -77,8 +77,8 @@
 }
 
 .tt-photo {
-  width: 380px;
-  height: 380px;
+  width: 340px;
+  height: 460px;
   flex-shrink: 0;
   border-radius: 28px;
   opacity: 0;
@@ -89,6 +89,21 @@
 .tt-photo.is-visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+.tt-photo.has-image {
+  background: var(--cta-yellow);
+  border: none;
+  padding: 0;
+  overflow: hidden;
+}
+
+.tt-photo.has-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
 }
 
 .tt-card {
@@ -201,9 +216,9 @@
 
   .tt-photo {
     width: 100%;
-    max-width: 380px;
+    max-width: 340px;
     height: auto;
-    aspect-ratio: 1 / 1;
+    aspect-ratio: 340 / 460;
   }
 
   .tt-card {
