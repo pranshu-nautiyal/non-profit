@@ -163,18 +163,6 @@
   display: block;
 }
 
-.photo-credit {
-  display: block;
-  margin-top: 6px;
-  font-size: 11px;
-  color: var(--nav-muted);
-  text-align: center;
-}
-
-.photo-credit a {
-  color: inherit;
-}
-
 /* ---------- Info cards (Mission / Art With Purpose / Growing Together) ---------- */
 /* Sticky stacking cards: each one pins in place and the next scrolls up to cover it. */
 
